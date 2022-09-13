@@ -294,6 +294,10 @@ int main()
 Break is not needed in the default case, but it is a good idea to leave it there for defensive programming. If more cases are added later after default, and the programmer forgets to update the prior case, this will make sure that the code does not continue execution to the next case.
 
 
+## HOMEWORK:
+- The C Programming Language, 2nd Edition - Kernighan & Ritchie, Chapter 2.6-2.12, 3.1-3.3, 1.5
+- Coding Homework:
+
 
 
 
