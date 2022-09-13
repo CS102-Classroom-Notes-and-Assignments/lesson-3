@@ -1,5 +1,8 @@
 # lesson-3
 
+#### VSCode
+VScode is a popular editor, and will make it easier to edit your code. Download VScode from here: https://code.visualstudio.com/download
+
 #### BITWISE OPERATORS
 These can only be applied to integral operands, that is, char, short, int, and long, whether signed or unsigned.
 
