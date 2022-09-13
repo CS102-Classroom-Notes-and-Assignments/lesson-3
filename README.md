@@ -262,6 +262,12 @@ Text input or output, regardless of where it originates or where it goes to, is 
 getchar() - reads the next input character from a text stream and returns that as its value.
 putchar(c) - prints the contents of the integer variable c as a character, usually on the screen.
 
+Run the file with an input file like this:
+```
+gcc test.c
+./a.out < inputfile.txt
+```
+
 #### GETCHAR
 gets one character from the command line
 ```c
@@ -270,8 +276,9 @@ gets one character from the command line
 int main()
 {
     char c = getchar();
+    printf("-------\n");
     putchar(c);
-    printf("%c", c);
+    printf("\nthe vallue of the char c is %c\n", c);
 
     return 0;
 }
