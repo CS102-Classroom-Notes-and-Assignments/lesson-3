@@ -378,6 +378,8 @@ int main()
 }
 ```
 
+Break is not needed in the default case, but it is a good idea to leave it there for defensive programming. If more cases are added later after default, and the programmer forgets to update the prior case, this will make sure that the code does not continue execution to the next case.
+
 
 #### Looking Ahead
 https://www.programiz.com/c-programming/examples/calculator-switch-case 
@@ -414,8 +416,6 @@ int main() {
   return 0;
 }
 ```
-
-Break is not needed in the default case, but it is a good idea to leave it there for defensive programming. If more cases are added later after default, and the programmer forgets to update the prior case, this will make sure that the code does not continue execution to the next case.
 
 
 ## HOMEWORK:
