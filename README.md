@@ -69,6 +69,7 @@ one's complement + two's complement =  0000 0101 + 1111 1011 = 1
 
 
 Good Video to review two's complement and negative numbers: https://www.youtube.com/watch?v=4qH4unVtJkE
+
 Another helpful resource: https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html
 
 ### Assignment Operators 
