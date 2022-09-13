@@ -1,9 +1,9 @@
 # lesson-3
 
-#### VSCode
+### VSCode
 In order to make editing your code easier, I reccomend downloading VScode. Choose the appropriate download option here: https://code.visualstudio.com/download
 
-#### BITWISE OPERATORS
+#### Bitwise Operators
 These can only be applied to integral operands, that is, char, short, int, and long, whether signed or unsigned.
 
 - &  	bitwise AND
