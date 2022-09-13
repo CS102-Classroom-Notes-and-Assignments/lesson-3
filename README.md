@@ -333,6 +333,7 @@ switch(expression) {
 
 #### SWITCH STATEMENT EXAMPLE
 break causes the switch to end, otherwise, it will continue to the next case
+
 echo $? will show the result of the program
 ```c
 #include <stdio.h>
