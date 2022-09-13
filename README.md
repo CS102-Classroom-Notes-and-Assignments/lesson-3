@@ -123,6 +123,30 @@ The “operator” () refers to a function call. The operators -> and . are used
 
 & is unary, && is binary.
 
+#### operator precedence example:
+```c
+#include <stdio.h>
+int main()
+{
+    int a = 20;
+    int b = 10;
+    int c = 15;
+    int d = 5;
+    int e;
+    e = (a + b) * c / d;
+    printf("Value of (a + b) * c / d : %d\n", e);
+    e = ((a + b) * c) % a;
+    printf("Value of ((a + b) * c) is : %d\n", e);
+    e = (a - d) >> 2;
+    printf("Value of (a - d) >> 2 is : %d\n", e);
+    e = a - (d >> 2);
+    printf("Value of  a - (d >> 2) is : %d\n", e);
+    e = (a && b) << 3;
+    printf("Value of (a && b) << 3 is : %d\n", e);
+    return 0;
+}
+```
+
 C, like most languages, does not specify the order in which operands of an operator are evaluated. The exceptions are &&, ||, ?: and ‘,’). For example, in a statement like x = f() + g(); f may be evaluated before g or vice versa. Same goes with printf(“%d %d\n”, ++n, power(2, n));.  Another situation in which order might matter is a[i] = i++; The moral is that writing code that depends on order of evaluation is a bad programming practice in any language.
 
 ### Conditional Statements
