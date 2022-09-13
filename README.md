@@ -3,7 +3,7 @@
 ### VSCode
 In order to make editing your code easier, I reccomend downloading VScode. Choose the appropriate download option here: https://code.visualstudio.com/download
 
-#### Bitwise Operators
+### Bitwise Operators
 These can only be applied to integral operands, that is, char, short, int, and long, whether signed or unsigned.
 
 - &  	bitwise AND
@@ -39,9 +39,35 @@ int main()
 }
 
 ```
+#### Summary:
+-  to flip the sign, get the two's complement = one's complement of binary number + 1 (ignore the overflowed bit)
+```
+decimal = 5
+binary = 0000 0101
+one's complement = 1111 1010
+two's complement (negative 5) = 1111 1010 + 0000 0001 = 1111 1011
+
+decimal = -5
+binary = 1111 1011
+one's complement = 0000 0100
+two's complement (positive 5) = 0000 0100 + 0000 0001 = 0000 0101
+```
+- to get the decimal value of a signed number, take leftmost bit of two's complement as negative value and add up the rest 
+```
+two's complement = 1111 1011 = -128 + 64 + 32 + 16 + 8 + 2 + 1 = -128 + 123 = -5
+```
+- note that the two's complement positive # + two's complement negative # = 0
+```
+decimal = 5
+two's complement positive # = 0000 0101
+two's complement negative # = 1111 1011
+one's complement + two's complement =  0000 0101 + 1111 1011 = 1
+```
 
 
-#### Assignment Operators 
+Good Video to review two's complement and negative numbers: https://www.youtube.com/watch?v=4qH4unVtJkE
+
+### Assignment Operators 
 - i = i + 2 is equivalent to i += 2
 - i = i - 2 is equivalent to i -= 2
 - expr1 = (expr1) op (expr2) is equivalent to expr1 op= expr2
@@ -69,7 +95,7 @@ if (c == ‘\n\) {
 }
 ```
 
-#### Precedence & Associativity Operators
+### Precedence & Associativity Operators
 The “operator” () refers to a function call. The operators -> and . are used to access members of structures, sizeof (size of an object), * (indirection through a pointer) and * (address of an object), and comma operator will all be discussed in later chapters.
 <img src="operators.png" width="600">
 
@@ -78,7 +104,7 @@ The “operator” () refers to a function call. The operators -> and . are used
 
 C, like most languages, does not specify the order in which operands of an operator are evaluated. The exceptions are &&, ||, ?: and ‘,’). For example, in a statement like x = f() + g(); f may be evaluated before g or vice versa. Same goes with printf(“%d %d\n”, ++n, power(2, n));.  Another situation in which order might matter is a[i] = i++; The moral is that writing code that depends on order of evaluation is a bad programming practice in any language.
 
-#### Conditional Statements
+### Conditional Statements
 
 #### IF Statements
 ```c
@@ -184,7 +210,7 @@ int main()
 
 ```
 
-#### BASIC INPUT/OUTPUT
+### BASIC INPUT/OUTPUT
 Text input or output, regardless of where it originates or where it goes to, is dealt with as streams of characters. A text stream is a sequence of characters divided into lines;each line consists of zero or more characters followed by a newline character. 
 getchar() - reads the next input character from a text stream and returns that as its value.
 putchar(c) - prints the contents of the integer variable c as a character, usually on the screen.
@@ -233,7 +259,7 @@ main()
 }
 ```
 
-#### SWITCH STATEMENTS
+### SWITCH STATEMENTS
 Another way to write if, else-if, and else
 Each const-expr is a constant integer value
 Each case is like an if, default is like the else
