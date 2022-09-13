@@ -380,7 +380,7 @@ Break is not needed in the default case, but it is a good idea to leave it there
 
 ## HOMEWORK:
 - The C Programming Language, 2nd Edition - Kernighan & Ritchie, Chapter 2.6-2.12, 3.1-3.3, 1.5
-- Coding Homework:
+- Coding Homework: will be added after class
 
 
 
