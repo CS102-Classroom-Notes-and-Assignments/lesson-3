@@ -2,12 +2,13 @@
 
 #### BITWISE OPERATORS
 These can only be applied to integral operands, that is, char, short, int, and long, whether signed or unsigned.
-&  	bitwise AND
-|  	bitwise inclusive OR
-^  	bitwise exclusive OR
-<<  	left shift
->> 	 right shift
-~ 	 one's complement (unary)
+
+- &  	bitwise AND
+- |  	bitwise inclusive OR
+- ^  	bitwise exclusive OR
+- <<  	left shift
+- \>> 	 right shift
+- ~ 	 one's complement (unary)
 
 Note that this is different than the logical operators && and ||. If x=1, and y=2, x & y = 0, but x && y=1.
 
@@ -38,12 +39,12 @@ int main()
 
 
 #### ASSIGNMENT OPERATORS
-i = i + 2 is equivalent to i += 2
-i = i - 2 is equivalent to i -= 2
-expr1 = (expr1) op (expr2) is equivalent to expr1 op= expr2
-Also works for: * / % << >> & ^ |
-Commonly used in loops
-x *= y + 1 is the same as x = x *(y+1)
+- i = i + 2 is equivalent to i += 2
+- i = i - 2 is equivalent to i -= 2
+- expr1 = (expr1) op (expr2) is equivalent to expr1 op= expr2
+- Also works for: * / % << >> & ^ |
+- Commonly used in loops
+- x *= y + 1 is the same as x = x *(y+1)
 
 Assignment operators can occur in expressions as well, the same way that we have seen:
 while (( c = getchar()) != EOF)
@@ -65,8 +66,7 @@ if (c == ‘\n\) {
 }
 ```
 
-#### PRECEDENCE
-PRECEDENCE & ASSOCIATIVITY OPERATORS
+#### PRECEDENCE & ASSOCIATIVITY OPERATORS
 The “operator” () refers to a function call. The operators -> and . are used to access members of structures, sizeof (size of an object), * (indirection through a pointer) and * (address of an object), and comma operator will all be discussed in later chapters.
 
 
