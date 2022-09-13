@@ -2,6 +2,9 @@
 
 ### VSCode
 In order to make editing your code easier, I reccomend downloading VScode. Choose the appropriate download option here: https://code.visualstudio.com/download
+- To auto format your code on save - turn on "format on save" in your VScode settings
+- To add extra support for C - add the C/C++ extension 
+
 
 ### Bitwise Operators
 These can only be applied to integral operands, that is, char, short, int, and long, whether signed or unsigned.
