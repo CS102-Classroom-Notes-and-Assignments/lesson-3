@@ -86,15 +86,33 @@ x= n++; sets x to 5, but,
 x=++n; sets x to 6. In both cases, n becomes 6.
 
 ```c
-if (c == ‘\n\) {
+if (c == '\n') {
 	s[i] = c;
-++i;
+	++i;
 }
 ```
 Can be replaced to:
 ```c
-if (c == ‘\n\) {
+if (c == '\n') {
 	s[i++] = c;
+}
+```
+
+OR
+```c
+#include <stdio.h>
+int main()
+{
+    int var1 = 5, var2 = 5;
+    printf("var1: %d\n", var1);
+    printf("var1 postfix increment: %d\n", var1++);
+    printf("var1:%d\n", var1);
+    printf("------------------\n");
+    printf("var2: %d\n", var2);
+    printf("var2 prefix increment: %d\n", ++var2);
+    printf("var2: %d\n", var2);
+
+    return 0;
 }
 ```
 
