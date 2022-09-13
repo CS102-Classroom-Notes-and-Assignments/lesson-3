@@ -122,6 +122,7 @@ if (c == '\n') {
 
 ### Precedence & Associativity Operators
 The “operator” () refers to a function call. The operators -> and . are used to access members of structures, sizeof (size of an object), * (indirection through a pointer) and * (address of an object), and comma operator will all be discussed in later chapters.
+
 <img src="operators.png" width="600">
 
 
