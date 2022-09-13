@@ -68,7 +68,7 @@ one's complement + two's complement =  0000 0101 + 1111 1011 = 1
 ```
 
 
-Good Video to review two's complement and negative numbers: https://www.youtube.com/watch?v=4qH4unVtJkE
+Video to review two's complement and negative numbers: https://www.youtube.com/watch?v=4qH4unVtJkE
 
 Another helpful resource: https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html
 
@@ -281,7 +281,7 @@ int main()
     char c = getchar();
     printf("-------\n");
     putchar(c);
-    printf("\nthe vallue of the char c is %c\n", c);
+    printf("\nthe value of the char c is %c\n", c);
 
     return 0;
 }
