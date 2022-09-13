@@ -41,7 +41,7 @@ int main()
 ```
 
 
-#### ASSIGNMENT OPERATORS
+#### Assignment Operators 
 - i = i + 2 is equivalent to i += 2
 - i = i - 2 is equivalent to i -= 2
 - expr1 = (expr1) op (expr2) is equivalent to expr1 op= expr2
@@ -69,7 +69,7 @@ if (c == ‘\n\) {
 }
 ```
 
-#### PRECEDENCE & ASSOCIATIVITY OPERATORS
+#### Precedence & Associativity Operators
 The “operator” () refers to a function call. The operators -> and . are used to access members of structures, sizeof (size of an object), * (indirection through a pointer) and * (address of an object), and comma operator will all be discussed in later chapters.
 <img src="operators.png" width="600">
 
@@ -78,9 +78,9 @@ The “operator” () refers to a function call. The operators -> and . are used
 
 C, like most languages, does not specify the order in which operands of an operator are evaluated. The exceptions are &&, ||, ?: and ‘,’). For example, in a statement like x = f() + g(); f may be evaluated before g or vice versa. Same goes with printf(“%d %d\n”, ++n, power(2, n));.  Another situation in which order might matter is a[i] = i++; The moral is that writing code that depends on order of evaluation is a bad programming practice in any language.
 
-#### CONDITIONAL STATEMENTS
+#### Conditional Statements
 
-#### IF STATEMENTS
+#### IF Statements
 ```c
 if (a > b) 
 {
@@ -103,7 +103,7 @@ int main()
 }
 ```
 
-#### IF-ELSE STATEMENTS
+#### IF-ELSE Statements
 ```c
 if (a > b) 
 {
@@ -122,7 +122,7 @@ Note that if expr2 and expr3 are of different types, the type of the result is d
 In general it is better to use braces to make it clear which else is associated with which if. Indentation/spacing does not matter so you must make it clear to the compiler if you have nested if/else.
 
   
-#### IF-ELSE STATEMENT EXAMPLE
+#### IF-ELSE Statement Example
 ```c
 #include <stdio.h>
 
@@ -142,7 +142,7 @@ int main()
 }
 ```
 
-#### IF-ELSE IF-ELSE STATEMENTS
+#### IF-ELSE IF-ELSE Statements
 ```c
 if (a > b) 
 {
@@ -158,7 +158,7 @@ else
 }
 ```
 
-#### IF-ELSE IF-ELSE STATEMENT EXAMPLE
+#### IF-ELSE IF-ELSE Statement Example
 ```c
 #include <stdio.h>
 
