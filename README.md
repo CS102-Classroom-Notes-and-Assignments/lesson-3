@@ -82,23 +82,11 @@ Assignment operators can occur in expressions as well, the same way that we have
 while (( c = getchar()) != EOF)
 
 ++ and – may be used either as a prefix or postfix operator. In both cases, the effect is to increment n, but ++n increments n before its value is used, while n++ increments n after its value has been used. 
+
 x= n++; sets x to 5, but, 
 x=++n; sets x to 6. In both cases, n becomes 6.
 
-```c
-if (c == '\n') {
-	s[i] = c;
-	++i;
-}
-```
-Can be replaced to:
-```c
-if (c == '\n') {
-	s[i++] = c;
-}
-```
 
-OR
 ```c
 #include <stdio.h>
 int main()
@@ -115,6 +103,20 @@ int main()
     return 0;
 }
 ```
+OR the postfix and prefix can be used to increment a char
+```c
+if (c == '\n') {
+	s[i] = c;
+	++i;
+}
+```
+Can be replaced to:
+```c
+if (c == '\n') {
+	s[i++] = c;
+}
+```
+
 
 ### Precedence & Associativity Operators
 The “operator” () refers to a function call. The operators -> and . are used to access members of structures, sizeof (size of an object), * (indirection through a pointer) and * (address of an object), and comma operator will all be discussed in later chapters.
