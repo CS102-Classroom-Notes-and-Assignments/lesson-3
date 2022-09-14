@@ -421,7 +421,7 @@ int main() {
 
 ## HOMEWORK:
 - The C Programming Language, 2nd Edition - Kernighan & Ritchie, Chapter 2.6-2.12, 3.1-3.3, 1.5
-- Coding Homework: will be added after class
+- Coding Homework: https://classroom.github.com/a/6ChGMoLd
 
 
 
