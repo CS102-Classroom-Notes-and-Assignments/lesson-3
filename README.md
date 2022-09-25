@@ -83,7 +83,7 @@ Another helpful resource: https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp
 Assignment operators can occur in expressions as well, the same way that we have seen:
 while (( c = getchar()) != EOF)
 
-++ and – may be used either as a prefix or postfix operator. In both cases, the effect is to increment n, but ++n increments n before its value is used, while n++ increments n after its value has been used. 
+++ and - - may be used either as a prefix or postfix operator. In both cases, the effect is to increment n, but ++n increments n before its value is used, while n++ increments n after its value has been used. 
 
 x= n++; sets x to 5, but, 
 x=++n; sets x to 6. In both cases, n becomes 6.
